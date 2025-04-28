@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Offline PDF Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Offline PDF Editor</h1>
+  </header>
+
+  <div class="toolbar">
+    <input type="file" id="pdfUpload" accept="application/pdf" />
+    
+    <button onclick="editText()">Edit Text</button>
+    <button onclick="highlightText()">Highlight</button>
+    <input type="color" id="highlightColor" value="#FFFF00" title="Highlight Color" />
+    
+    <button onclick="handwrittenNote()">Handwritten Note</button>
+
+    <button onclick="insertPage()">Insert Page</button>
+    <button onclick="deletePage()">Delete Page</button>
+    <button onclick="rearrangePages()">Rearrange Pages</button>
+
+    <button onclick="changeFont()">Change Font Size/Color</button>
+
+    <button onclick="mergePDFs()">Merge PDFs</button>
+    <button onclick="splitPDF()">Split PDF</button>
+    <button onclick="createCollage()">PDF Collage</button>
+
+    <button onclick="pdfToImage()">Convert PDF to Image</button>
+    <button onclick="imageToPDF()">Convert Image to PDF</button>
+
+    <button onclick="savePDF()">Save PDF</button>
+  </div>
+
+  <div id="pdfViewer">
+    <!-- PDF will be displayed here -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
